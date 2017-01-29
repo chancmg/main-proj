@@ -1,0 +1,17 @@
+package org.ire.util;
+
+public enum ClassType {
+	
+	DUMMY,
+	UNIGRAM,
+	BIGRAM,
+	TRIGRAM,
+	CAPITALIZE,
+	SENTENCECOUNT,
+	PUNCTUATION,
+	URL,
+	POSITIVE_NEGATIVE,
+	LENGTH_OF_DOC
+	
+
+}

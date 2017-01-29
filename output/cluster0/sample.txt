@@ -1,0 +1,225 @@
+sample.txt
+
+Suhas K S 
+
+M.tech CSE Ist Year IIIT-H   Hyderabad  +91-7660964913  ks.suhas355@gmail.com                     
+
+ DOB: 14/11/90 
+
+  
+
+ 
+
+Languages: 
+
+ 
+
+ 
+
+Worked Areas: 
+
+ 
+
+ 
+
+ 
+
+Education 
+
+ 
+
+M-Tech 
+
+ 
+
+        B-Tech 
+
+ 
+
+           
+
+        12th 
+
+ 
+
+        10th 
+ 
+
+ 
+
+ 
+
+C++, Java, C, Python, Shell Scripting,  Java Script, Android 
+
+ 
+
+ 
+
+HR Solutions in cloud, Data retrieval and mining, Database System 
+
+implementation,  Client – Server analysis simulator, Web2py , Selenium web 
+driver , Test tool development and Automation 
+
+ 
+
+ 
+
+ 
+
+In computer science from IIIT-H with CGPA 9.20 
+
+ 
+
+In Computer Science from S.J.C.E Mysore under V.T.U University 
+
+Karnataka with 9.33. CGPA. 
+
+ 
+
+Govt. junior college Chikmagalur Karnataka with 88.16%. 
+
+ 
+
+S.S.R.D High school Chikmagalur Karnataka with 88%. 
+
+Work 
+
+Experience: 
+
+1. SuccessFactors  (SAP)                                         June 2012 – July 2014 
+
+? Worked as an in-house tool developer, UI Automation engineer . 
+
+? Implemented internal tool ‘Automated status report system’. 
+
+? Worked on Selenium webdriver . 
+ 
+
+ 2.  Research Assistant                                       July 2011 -  May  2012  
+? Worked under Dr. Anil Kumar KM for the research project ‘Multimodal 
+
+Opinion Mining’.  
+
+? The project mainly concentrated on processing natural language, emoticons 
+and short texts to determine the opinion expressed in the language. 
+
+? Project involved collection of huge amount of opinion expressing data 
+using which weightage of polar words were calculated. 
+
+? Experiments were done to increase the machine learning capability in order 
+to produce more accurate results for opinionated texts. 
+
+                   
+
+  
+3. IBM internship                                                 Jan 2011 to Dec 2012 
+
+? This Project was done under “Global mentoring program by IBM” which 
+concentrated on the extraction and analysis of resources in different servers 
+
+and triggering the status and warning message to the administrator 
+
+periodically. 
+
+ 
+
+
+
+
+M-t   Main Projects 1. Wiki Search Engine:     
+Search engine was developed on latest wiki dump using Information 
+
+extraction and retrieval method.  
+
+Scoring mechanism of documents was based on the combination of tf-
+
+idf method and Boolean intersection model.  
+
+Any search query was giving the relevant output in less than 0.5 
+
+seconds. 
+
+ 
+
+2. Automated Status reporter:   
+
+This was a reporter tool which automated the process of test report 
+
+generation. 
+
+The data was fetched from Jira and testlink , reports and graphs were 
+
+generated for these data. 
+
+The generated graph and report was used to form an Auto generated 
+
+mail and sent across the team automatically on daily basis. 
+
+ 
+3. Implementation of Unix Shell: 
+
+Unix like shell was implemented supporting most of the external and 
+
+internal commands such as ls, cat, redirections, pwd, history, cd,     
+
+bang (!, !!, !+x. !-x )  etc., along with their options. 
+
+ 
+
+4. Online Quiz portal (web2py): 
+This project was a portal for professors and students. Professors had a 
+
+provision to upload their MCQ tests in the portal.  
+
+Students were able to take these tests. 
+
+ Dynamic statistics was shown for students about their performance and 
+
+professors about the number of students taken their tests. 
+
+ 
+
+5. Generic IOT Platform    (Raspberry pi, Mongo DB, node.js, android) 
+–In progress 
+Project involves creation of platform between sensors and the end 
+
+application.  
+
+The data from the sensors is collected by gateway (raspberry pi) and 
+
+stored. The server pulls this data from registered gateway and stores in 
+
+in database.  
+
+Based on the requirement the server sends sensor data to the end user 
+
+application. 
+
+To test the platform A/C controller simulator will be built on top of this 
+
+platform which receives the data and act accordingly. 
+ 
+
+Other Projects: SQL Engine, Whats my task (Android) in progress, KEB billing system using 
+
+semaphores, Sudoku solver, Instance config compare tool. 
+
+Interests:       Travelling, Playing  guitar, Cycling, Table tennis, Trekking, Cooking  
+
+Achievements: ? Awarded as “Team player” and “Accountable” for the productive work in 
+successfactors. 
+
+? Recognition certificate from IBM for successful completion of project with 
+all satisfactory conditions. 
+
+? Awards for conducting technical workshops and sessions in various 
+colleges. 
+
+? Seminar was given on Automation coding and other best practices.  
+
+
+
+ 
+
+
+
