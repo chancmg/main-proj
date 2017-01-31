@@ -1,0 +1,29 @@
+Weather5.wsdl.txt
+http://www.pathfinder-xml.com/WeatherStationService.wsdl
+http://pathfinder-xml/WeatherStationService.xsd
+WMOGetAllWeatherStationsRequest
+WMOGetAllWeatherStationsRequest
+element[name=WMOGetAllWeatherStationsRequest,type=null,ref=null,embeddedType=complexType[qname=null,model=sequence[name= null, particles=[element[name=Login,type={http://pathfinder-xml/WeatherStationService.xsd}Login,ref=null,embeddedType=null]]]]]
+
+WMOGetAllWeatherStationsResponse
+WMOGetAllWeatherStationsResponse
+element[name=WMOGetAllWeatherStationsResponse,type=null,ref=null,embeddedType=complexType[qname=null,model=sequence[name= null, particles=[element[name=Error,type={http://pathfinder-xml/WeatherStationService.xsd}Error,ref=null,embeddedType=null], element[name=WeatherStation,type={http://pathfinder-xml/WeatherStationService.xsd}WeatherStation,ref=null,embeddedType=null]]]]]
+
+WMOGetAllWeatherStationsPort
+WMOGetAllWeatherStationsOperation
+
+{http://www.pathfinder-xml.com/WeatherStationService.wsdl}WMOGetAllWeatherStationsRequest
+{http://www.pathfinder-xml.com/WeatherStationService.wsdl}WMOGetAllWeatherStationsResponse
+WMOGetAllWeatherStationsSOAPBinding
+WMOGetAllWeatherStationsPort
+SOAP11
+document
+WMOGetAllWeatherStationsOperation
+null
+literal
+WeatherStationService
+WMOGetAllWeatherStationsService
+WMOGetAllWeatherStationsSOAPBinding
+http://www.pathfinder-xml.com/soap/*/services/WMOGetAllWeatherStations
+
+

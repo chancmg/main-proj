@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+This is the seekda cache of the WSDL definition available at http://www.pathfinder-xml.com/development/WSDL/WeatherStationService.wsdl.
+seekdas cache is a snapshot that we took as we crawled the Web.
+The service may have changed since the last crawl.
+seekda is neither affiliated with the authors of this service nor responsible for its advertised functionality.
+
+-->
+
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/WeatherStationService.wsdl" xmlns:ns="http://pathfinder-xml/WeatherStationService.xsd" targetNamespace="http://www.pathfinder-xml.com/WeatherStationService.wsdl">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/WeatherStationService.xsd">
+      <xsd:complexType name="Error">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="Message" type="xsd:string" />
+          <xsd:element maxOccurs="1" name="StackTrace" type="xsd:string" />
+        </xsd:sequence>
+        <xsd:attribute name="MajorCode" type="xsd:string" use="optional" />
+        <xsd:attribute name="MinorCode" type="xsd:string" use="optional" />
+      </xsd:complexType>
+      <xsd:complexType name="Login">
+        <xsd:attribute name="AccountId" type="xsd:string" use="required" />
+        <xsd:attribute name="Guid" type="xsd:string" />
+        <xsd:attribute name="Password" type="xsd:string" use="required" />
+        <xsd:attribute name="UserId" type="xsd:string" use="required" />
+      </xsd:complexType>
+      <xsd:complexType name="WeatherStation">
+        <xsd:attribute name="Code" type="xsd:string" />
+        <xsd:attribute name="Name" type="xsd:string" />
+        <xsd:attribute name="State" type="xsd:string" />
+      </xsd:complexType>
+      <xsd:element name="WMOGetAllWeatherStationsRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Login" type="ns:Login" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WMOGetAllWeatherStationsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error" />
+            <xsd:element maxOccurs="unbounded" name="WeatherStation" type="ns:WeatherStation" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="WMOGetAllWeatherStationsRequest">
+    <part element="ns:WMOGetAllWeatherStationsRequest" name="WMOGetAllWeatherStationsRequest" />
+  </message>
+  <message name="WMOGetAllWeatherStationsResponse">
+    <part element="ns:WMOGetAllWeatherStationsResponse" name="WMOGetAllWeatherStationsResponse" />
+  </message>
+  <portType name="WMOGetAllWeatherStationsPort">
+    <operation name="WMOGetAllWeatherStationsOperation">
+      <input message="tns:WMOGetAllWeatherStationsRequest" />
+      <output message="tns:WMOGetAllWeatherStationsResponse" />
+    </operation>
+  </portType>
+  <binding name="WMOGetAllWeatherStationsSOAPBinding" type="tns:WMOGetAllWeatherStationsPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="WMOGetAllWeatherStationsOperation">
+      <soap:operation />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WeatherStationService">
+    <port binding="tns:WMOGetAllWeatherStationsSOAPBinding" name="WMOGetAllWeatherStationsService">
+      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/WMOGetAllWeatherStations" />
+    </port>
+  </service>
+</definitions>

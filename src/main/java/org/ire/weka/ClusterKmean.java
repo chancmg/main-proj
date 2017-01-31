@@ -231,7 +231,7 @@ public class ClusterKmean {
 		String[] fileNames = new String[100000];
 		int l = 0;
 		try {
-			File folder = new File("rawdata");
+			File folder = new File("rawwsdl");
 
 			for (File file : folder.listFiles()) {
 				fileNames[l++] = file.getName();
@@ -270,7 +270,7 @@ public class ClusterKmean {
 
 			try {
 
-				File afile = new File("rawdata/" + fileNames[i]);
+				File afile = new File("rawwsdl/" + fileNames[i]);
 				File bfile = new File("outputRaw/cluster" + clusterNum + "/"
 						+ fileNames[i]);
 

@@ -41,9 +41,9 @@ public class TikaExtraction {
 		File folder = new File(rawDataDir);
 		File[] listOfFiles = folder.listFiles();
 		for (int i = 0; i < listOfFiles.length; i++) {
-			System.out.println("extracting data from " + listOfFiles[i] + " using tika");
+			//System.out.println("extracting data from " + listOfFiles[i] + " using tika");
 			extractAndSaveInFile(extractedDir,listOfFiles[i]);
-			System.out.println("------------------------------------------");
+			//System.out.println("------------------------------------------");
 		}
 	}
 	

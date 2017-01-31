@@ -97,7 +97,7 @@ public class FrontUi extends JPanel {
 	}
 
 	public static void main(String[] args) {
-		final String[]  labels = { "    Unigram", "    Bigram", "    Trigram",
+		/*final String[]  labels = { "    Unigram", "    Bigram", "    Trigram",
 				"    Capitalize", "    Senetence count", "    Punctuation",
 				"    Url", "    positive and negative words","    Document length" };
 
@@ -185,6 +185,6 @@ public class FrontUi extends JPanel {
 		p.add(submit);
 		f.getContentPane().add(p, BorderLayout.SOUTH);
 		f.pack();
-		f.setVisible(true);
+		f.setVisible(true);*/
 	}
 }

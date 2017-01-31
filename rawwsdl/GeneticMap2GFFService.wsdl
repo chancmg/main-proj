@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<!--
+This is the seekda cache of the WSDL definition available at http://biomoby.org/services/wsdl/bioinfo.icapture.ubc.ca/GeneticMap2GFF.
+seekdas cache is a snapshot that we took as we crawled the Web.
+The service may have changed since the last crawl.
+seekda is neither affiliated with the authors of this service nor responsible for its advertised functionality.
+
+-->
+
+<wsdl:definitions name="MOBY_Central_Generated_WSDL"
+                targetNamespace="http://biomoby.org/Central.wsdl"
+                xmlns:tns="http://biomoby.org/Central.wsdl"
+                xmlns:xsd1="http://biomoby.org/CentralXSDs.xsd"
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                xmlns="http://schemas.xmlsoap.org/wsdl/"
+                xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/">
+
+                 
+  <wsdl:message name="GeneticMap2GFFInput">
+          <wsdl:part name="data" type="xsd:string"/>
+  </wsdl:message>
+
+  <wsdl:message name="GeneticMap2GFFOutput">
+          <wsdl:part name="body" type="xsd:string"/>
+  </wsdl:message>
+
+  <wsdl:portType name="GeneticMap2GFFPortType">
+          <wsdl:operation name="GeneticMap2GFF">
+                 <wsdl:input message="tns:GeneticMap2GFFInput"/>
+                 <wsdl:output message="tns:GeneticMap2GFFOutput"/>
+          </wsdl:operation>
+  </wsdl:portType>
+                
+  <wsdl:binding name="GeneticMap2GFFBinding" type="tns:GeneticMap2GFFPortType">
+          <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+          <wsdl:operation name="GeneticMap2GFF"><!-- in essense, this is the name of the subroutine that is called -->
+                 <wsdlsoap:operation soapAction='http://biomoby.org/#GeneticMap2GFF' style='rpc'/>
+                 <wsdl:input>
+                         <wsdlsoap:body use="encoded" namespace="http://biomoby.org/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                 </wsdl:input>
+                 <wsdl:output>
+                         <wsdlsoap:body use="encoded" namespace="http://biomoby.org/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                 </wsdl:output>
+          </wsdl:operation>
+  </wsdl:binding>
+                
+  <wsdl:service name="GeneticMap2GFFService">
+          <wsdl:documentation>Authority: bioinfo.icapture.ubc.ca  -  Consumes a Genetic Map object and converts it to a simple 7-column GFF format object</wsdl:documentation>  <!-- service description goes here -->
+          <wsdl:port name="GeneticMap2GFFPort" binding="tns:GeneticMap2GFFBinding">
+                 <wsdlsoap:address location="http://es-01.chibi.ubc.ca/~kawas/cgi-bin/EdMobyServer.cgi"/>    <!-- URL to service scriptname -->
+          </wsdl:port>
+  </wsdl:service>
+
+</wsdl:definitions>
+
+
+

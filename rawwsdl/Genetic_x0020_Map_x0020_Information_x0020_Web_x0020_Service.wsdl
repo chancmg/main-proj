@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This is the seekda cache of the WSDL definition available at http://128.192.66.83/map_WebService/MapData.asmx?wsdl.
+seekdas cache is a snapshot that we took as we crawled the Web.
+The service may have changed since the last crawl.
+seekda is neither affiliated with the authors of this service nor responsible for its advertised functionality.
+
+-->
+
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://cggc.agtec.uga.edu" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://cggc.agtec.uga.edu" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://cggc.agtec.uga.edu">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="getMapInfo">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMapInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMapInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChrom_LGroups">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="map_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChrom_LGroupsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getChrom_LGroupsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMaxLoc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="map_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="linkage_group" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMaxLocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMaxLocResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getProbes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="map_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="linkage_group" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="range" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getProbesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getProbesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBACs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="linkage_group" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="range" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBACsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getBACsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPolys">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="linkage_group" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="range" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPolysResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getPolysResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLocations">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="map_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="objType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="objName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLocationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLocationsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getProbeLocations">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prbGbAcc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getProbeLocationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getProbeLocationsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getMapInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:getMapInfo" />
+  </wsdl:message>
+  <wsdl:message name="getMapInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:getMapInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getChrom_LGroupsSoapIn">
+    <wsdl:part name="parameters" element="tns:getChrom_LGroups" />
+  </wsdl:message>
+  <wsdl:message name="getChrom_LGroupsSoapOut">
+    <wsdl:part name="parameters" element="tns:getChrom_LGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMaxLocSoapIn">
+    <wsdl:part name="parameters" element="tns:getMaxLoc" />
+  </wsdl:message>
+  <wsdl:message name="getMaxLocSoapOut">
+    <wsdl:part name="parameters" element="tns:getMaxLocResponse" />
+  </wsdl:message>
+  <wsdl:message name="getProbesSoapIn">
+    <wsdl:part name="parameters" element="tns:getProbes" />
+  </wsdl:message>
+  <wsdl:message name="getProbesSoapOut">
+    <wsdl:part name="parameters" element="tns:getProbesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBACsSoapIn">
+    <wsdl:part name="parameters" element="tns:getBACs" />
+  </wsdl:message>
+  <wsdl:message name="getBACsSoapOut">
+    <wsdl:part name="parameters" element="tns:getBACsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPolysSoapIn">
+    <wsdl:part name="parameters" element="tns:getPolys" />
+  </wsdl:message>
+  <wsdl:message name="getPolysSoapOut">
+    <wsdl:part name="parameters" element="tns:getPolysResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLocationsSoapIn">
+    <wsdl:part name="parameters" element="tns:getLocations" />
+  </wsdl:message>
+  <wsdl:message name="getLocationsSoapOut">
+    <wsdl:part name="parameters" element="tns:getLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getProbeLocationsSoapIn">
+    <wsdl:part name="parameters" element="tns:getProbeLocations" />
+  </wsdl:message>
+  <wsdl:message name="getProbeLocationsSoapOut">
+    <wsdl:part name="parameters" element="tns:getProbeLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMapInfoHttpGetIn" />
+  <wsdl:message name="getMapInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getChrom_LGroupsHttpGetIn">
+    <wsdl:part name="map_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getChrom_LGroupsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getMaxLocHttpGetIn">
+    <wsdl:part name="map_id" type="s:string" />
+    <wsdl:part name="linkage_group" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getMaxLocHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getProbesHttpGetIn">
+    <wsdl:part name="map_id" type="s:string" />
+    <wsdl:part name="linkage_group" type="s:string" />
+    <wsdl:part name="location" type="s:string" />
+    <wsdl:part name="range" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getProbesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getBACsHttpGetIn">
+    <wsdl:part name="linkage_group" type="s:string" />
+    <wsdl:part name="location" type="s:string" />
+    <wsdl:part name="range" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getBACsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getPolysHttpGetIn">
+    <wsdl:part name="linkage_group" type="s:string" />
+    <wsdl:part name="location" type="s:string" />
+    <wsdl:part name="range" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getPolysHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getLocationsHttpGetIn">
+    <wsdl:part name="map_id" type="s:string" />
+    <wsdl:part name="objType" type="s:string" />
+    <wsdl:part name="objName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getLocationsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getProbeLocationsHttpGetIn">
+    <wsdl:part name="prbGbAcc" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getProbeLocationsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getMapInfoHttpPostIn" />
+  <wsdl:message name="getMapInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getChrom_LGroupsHttpPostIn">
+    <wsdl:part name="map_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getChrom_LGroupsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getMaxLocHttpPostIn">
+    <wsdl:part name="map_id" type="s:string" />
+    <wsdl:part name="linkage_group" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getMaxLocHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getProbesHttpPostIn">
+    <wsdl:part name="map_id" type="s:string" />
+    <wsdl:part name="linkage_group" type="s:string" />
+    <wsdl:part name="location" type="s:string" />
+    <wsdl:part name="range" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getProbesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getBACsHttpPostIn">
+    <wsdl:part name="linkage_group" type="s:string" />
+    <wsdl:part name="location" type="s:string" />
+    <wsdl:part name="range" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getBACsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getPolysHttpPostIn">
+    <wsdl:part name="linkage_group" type="s:string" />
+    <wsdl:part name="location" type="s:string" />
+    <wsdl:part name="range" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getPolysHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getLocationsHttpPostIn">
+    <wsdl:part name="map_id" type="s:string" />
+    <wsdl:part name="objType" type="s:string" />
+    <wsdl:part name="objName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getLocationsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="getProbeLocationsHttpPostIn">
+    <wsdl:part name="prbGbAcc" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getProbeLocationsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:portType name="Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceSoap">
+    <wsdl:operation name="getMapInfo">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get Species, Map and Map identification designations. Input: no.  Output: Species, Map name and Map Id </documentation>
+      <wsdl:input message="tns:getMapInfoSoapIn" />
+      <wsdl:output message="tns:getMapInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getChrom_LGroups">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get Chromosome/linkage groups for a given map_id. Input: map_id.  Output: linkage groups associated with the given map_id </documentation>
+      <wsdl:input message="tns:getChrom_LGroupsSoapIn" />
+      <wsdl:output message="tns:getChrom_LGroupsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMaxLoc">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get amximum length (cM) of a given chromosome/linkage group. Input: map_id and Linkage group.  Output: Maximum length of the linkage group </documentation>
+      <wsdl:input message="tns:getMaxLocSoapIn" />
+      <wsdl:output message="tns:getMaxLocSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProbes">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get probes for certain area of the chromosome for a given map id. Input: map_id, chromosome/linkage group (linkage_group), location and range. If a length of the group equal to -1 is given, all probes on the given linkage group are returned.  Output: a list of probes </documentation>
+      <wsdl:input message="tns:getProbesSoapIn" />
+      <wsdl:output message="tns:getProbesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getBACs">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get BACs for a given linkage group. Input: chromosome/linkage group (linkage_group), location and range. If a length of the group equal to -1 is given, all BACs on the given linkage group are returned.   Output: a list of BACs </documentation>
+      <wsdl:input message="tns:getBACsSoapIn" />
+      <wsdl:output message="tns:getBACsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getPolys">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get Polymorphisms for a given linkage group. Input: chromosome/linkage group (linkage_group), location and range. If a length of the group equal to -1 is given, all polymorphisms on the given linkage group are returned.   Output: a list of probes along with polymorphisms related information </documentation>
+      <wsdl:input message="tns:getPolysSoapIn" />
+      <wsdl:output message="tns:getPolysSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocations">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get locations for a given map object in a given map.  Input: map_id, object Type, object name.  Output: locations and linkage groups </documentation>
+      <wsdl:input message="tns:getLocationsSoapIn" />
+      <wsdl:output message="tns:getLocationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProbeLocations">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get locations for a given GenBank probe accession Id.  Input: prbGbAcc.  Output: probe name locations and linkage groups </documentation>
+      <wsdl:input message="tns:getProbeLocationsSoapIn" />
+      <wsdl:output message="tns:getProbeLocationsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceHttpGet">
+    <wsdl:operation name="getMapInfo">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get Species, Map and Map identification designations. Input: no.  Output: Species, Map name and Map Id </documentation>
+      <wsdl:input message="tns:getMapInfoHttpGetIn" />
+      <wsdl:output message="tns:getMapInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getChrom_LGroups">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get Chromosome/linkage groups for a given map_id. Input: map_id.  Output: linkage groups associated with the given map_id </documentation>
+      <wsdl:input message="tns:getChrom_LGroupsHttpGetIn" />
+      <wsdl:output message="tns:getChrom_LGroupsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMaxLoc">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get amximum length (cM) of a given chromosome/linkage group. Input: map_id and Linkage group.  Output: Maximum length of the linkage group </documentation>
+      <wsdl:input message="tns:getMaxLocHttpGetIn" />
+      <wsdl:output message="tns:getMaxLocHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProbes">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get probes for certain area of the chromosome for a given map id. Input: map_id, chromosome/linkage group (linkage_group), location and range. If a length of the group equal to -1 is given, all probes on the given linkage group are returned.  Output: a list of probes </documentation>
+      <wsdl:input message="tns:getProbesHttpGetIn" />
+      <wsdl:output message="tns:getProbesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getBACs">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get BACs for a given linkage group. Input: chromosome/linkage group (linkage_group), location and range. If a length of the group equal to -1 is given, all BACs on the given linkage group are returned.   Output: a list of BACs </documentation>
+      <wsdl:input message="tns:getBACsHttpGetIn" />
+      <wsdl:output message="tns:getBACsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getPolys">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get Polymorphisms for a given linkage group. Input: chromosome/linkage group (linkage_group), location and range. If a length of the group equal to -1 is given, all polymorphisms on the given linkage group are returned.   Output: a list of probes along with polymorphisms related information </documentation>
+      <wsdl:input message="tns:getPolysHttpGetIn" />
+      <wsdl:output message="tns:getPolysHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocations">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get locations for a given map object in a given map.  Input: map_id, object Type, object name.  Output: locations and linkage groups </documentation>
+      <wsdl:input message="tns:getLocationsHttpGetIn" />
+      <wsdl:output message="tns:getLocationsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProbeLocations">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get locations for a given GenBank probe accession Id.  Input: prbGbAcc.  Output: probe name locations and linkage groups </documentation>
+      <wsdl:input message="tns:getProbeLocationsHttpGetIn" />
+      <wsdl:output message="tns:getProbeLocationsHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceHttpPost">
+    <wsdl:operation name="getMapInfo">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get Species, Map and Map identification designations. Input: no.  Output: Species, Map name and Map Id </documentation>
+      <wsdl:input message="tns:getMapInfoHttpPostIn" />
+      <wsdl:output message="tns:getMapInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getChrom_LGroups">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get Chromosome/linkage groups for a given map_id. Input: map_id.  Output: linkage groups associated with the given map_id </documentation>
+      <wsdl:input message="tns:getChrom_LGroupsHttpPostIn" />
+      <wsdl:output message="tns:getChrom_LGroupsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMaxLoc">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get amximum length (cM) of a given chromosome/linkage group. Input: map_id and Linkage group.  Output: Maximum length of the linkage group </documentation>
+      <wsdl:input message="tns:getMaxLocHttpPostIn" />
+      <wsdl:output message="tns:getMaxLocHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProbes">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get probes for certain area of the chromosome for a given map id. Input: map_id, chromosome/linkage group (linkage_group), location and range. If a length of the group equal to -1 is given, all probes on the given linkage group are returned.  Output: a list of probes </documentation>
+      <wsdl:input message="tns:getProbesHttpPostIn" />
+      <wsdl:output message="tns:getProbesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getBACs">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get BACs for a given linkage group. Input: chromosome/linkage group (linkage_group), location and range. If a length of the group equal to -1 is given, all BACs on the given linkage group are returned.   Output: a list of BACs </documentation>
+      <wsdl:input message="tns:getBACsHttpPostIn" />
+      <wsdl:output message="tns:getBACsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getPolys">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get Polymorphisms for a given linkage group. Input: chromosome/linkage group (linkage_group), location and range. If a length of the group equal to -1 is given, all polymorphisms on the given linkage group are returned.   Output: a list of probes along with polymorphisms related information </documentation>
+      <wsdl:input message="tns:getPolysHttpPostIn" />
+      <wsdl:output message="tns:getPolysHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocations">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get locations for a given map object in a given map.  Input: map_id, object Type, object name.  Output: locations and linkage groups </documentation>
+      <wsdl:input message="tns:getLocationsHttpPostIn" />
+      <wsdl:output message="tns:getLocationsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProbeLocations">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> Get locations for a given GenBank probe accession Id.  Input: prbGbAcc.  Output: probe name locations and linkage groups </documentation>
+      <wsdl:input message="tns:getProbeLocationsHttpPostIn" />
+      <wsdl:output message="tns:getProbeLocationsHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceSoap" type="tns:Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="getMapInfo">
+      <soap:operation soapAction="http://cggc.agtec.uga.edu/getMapInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChrom_LGroups">
+      <soap:operation soapAction="http://cggc.agtec.uga.edu/getChrom_LGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaxLoc">
+      <soap:operation soapAction="http://cggc.agtec.uga.edu/getMaxLoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProbes">
+      <soap:operation soapAction="http://cggc.agtec.uga.edu/getProbes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBACs">
+      <soap:operation soapAction="http://cggc.agtec.uga.edu/getBACs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPolys">
+      <soap:operation soapAction="http://cggc.agtec.uga.edu/getPolys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocations">
+      <soap:operation soapAction="http://cggc.agtec.uga.edu/getLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProbeLocations">
+      <soap:operation soapAction="http://cggc.agtec.uga.edu/getProbeLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceHttpGet" type="tns:Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="getMapInfo">
+      <http:operation location="/getMapInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChrom_LGroups">
+      <http:operation location="/getChrom_LGroups" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaxLoc">
+      <http:operation location="/getMaxLoc" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProbes">
+      <http:operation location="/getProbes" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBACs">
+      <http:operation location="/getBACs" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPolys">
+      <http:operation location="/getPolys" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocations">
+      <http:operation location="/getLocations" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProbeLocations">
+      <http:operation location="/getProbeLocations" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceHttpPost" type="tns:Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="getMapInfo">
+      <http:operation location="/getMapInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChrom_LGroups">
+      <http:operation location="/getChrom_LGroups" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaxLoc">
+      <http:operation location="/getMaxLoc" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProbes">
+      <http:operation location="/getProbes" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBACs">
+      <http:operation location="/getBACs" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPolys">
+      <http:operation location="/getPolys" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocations">
+      <http:operation location="/getLocations" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProbeLocations">
+      <http:operation location="/getProbeLocations" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_Service">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/"> The services allow user to get genome mapping related information. A detailed description of the services can be found at http://cggc.agtec.uga.edu/map_Webservice/help.aspx </documentation>
+    <wsdl:port name="Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceSoap" binding="tns:Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceSoap">
+      <soap:address location="http://128.192.66.83/map_WebService/MapData.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceHttpGet" binding="tns:Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceHttpGet">
+      <http:address location="http://128.192.66.83/map_WebService/MapData.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceHttpPost" binding="tns:Genetic_x0020_Map_x0020_Information_x0020_Web_x0020_ServiceHttpPost">
+      <http:address location="http://128.192.66.83/map_WebService/MapData.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

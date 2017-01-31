@@ -64,7 +64,7 @@ public class ExampleApplication {
 		return ClassType.values()[Integer.parseInt(value)];
 	}
 
-	public static boolean run(String inp,int k,int seed) {
+	public void run() {
 		try {
 			File taeDescriptor = null;
 
@@ -86,8 +86,8 @@ public class ExampleApplication {
 			/*System.out
 					.println("Enter the features 1. unigram \n 2. bigram \n 3. trigram \n"
 							+ " 4.Capitalize \n 5.Senetence \n 6.Punctuation \n 7. url \n 8. positive and negative words");
-			Scanner scanner = new Scanner(System.in);
-			String inp = scanner.nextLine();*/
+			Scanner scanner = new Scanner(System.in);*/
+			String inp ="1";
 			String featureList[] = inp.split(",");
 			extractor = new FileExtractor();
 			for (String feature1 : featureList) {
@@ -125,7 +125,7 @@ public class ExampleApplication {
 				ae.destroy();
 			}
 
-			System.out.println("----------Uima work completed---------");
+			System.out.println("----------Calculating score---------");
 
 			ScoreCalculator sc = new ScoreCalculator();
 			sc.process();
@@ -134,22 +134,21 @@ public class ExampleApplication {
 			System.out.println("----------Score calculation completed---------");
 			WekaMatrix.calculateMatrix();
 			System.out.println("----------Cluster Analysis completed---------");
-			/*System.out.println("enter number of cluster and seed");
+			System.out.println("enter number of cluster and seed");
 			BufferedReader obj = new BufferedReader(
 					new InputStreamReader(System.in));
 			String inp1 = obj.readLine();
-			String inp2[]=inp1.split(" ");*/
-			//int k = Integer.parseInt(inp2[0]);
-			//int seed = Integer.parseInt(inp2[1]);
+			String inp2[]=inp1.split(" ");
+			int k = Integer.parseInt(inp2[0]);
+			int seed = Integer.parseInt(inp2[1]);
 			ClusterKmean.clusterDoc(k, seed);
 			ClusterKmean.clusterOriginalDoc(k, seed);
 			
-			return true;
-
+			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return false;
+			
 		}
 	}
 
