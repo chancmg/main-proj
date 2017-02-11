@@ -29,12 +29,12 @@ public class BarChart_AWT extends ApplicationFrame
       ChartPanel chartPanel = new ChartPanel( barChart );        
       CategoryPlot categoryPlot = barChart.getCategoryPlot();
       CategoryAxis axis = categoryPlot.getDomainAxis();
-      axis.setCategoryMargin(-1);
+      axis.setCategoryMargin(0);
       axis.setLowerMargin(0.01);
       axis.setUpperMargin(0.01);
       BarRenderer br = (BarRenderer) categoryPlot.getRenderer();
       br.setMaximumBarWidth(1);
-      br.setItemMargin(-5); 
+      br.setItemMargin(-1); 
       chartPanel.setPreferredSize(new java.awt.Dimension( 2024 , 2000 ) );        
       setContentPane( chartPanel ); 
    }

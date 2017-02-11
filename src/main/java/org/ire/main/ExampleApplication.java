@@ -143,13 +143,15 @@ public class ExampleApplication {
 			int seed = Integer.parseInt(inp2[1]);
 			ClusterKmean.clusterDoc(k, seed);
 			ClusterKmean.clusterOriginalDoc(k, seed);
-			
+			String fList[] = {"unigram"};
+			VisualUi.analyseResult(k,fList);
 			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 			
 		}
+		
 	}
 
 	/**

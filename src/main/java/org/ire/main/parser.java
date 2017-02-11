@@ -29,7 +29,6 @@ public class parser {
 	}
 		
 		ExampleApplication e=new ExampleApplication();
-		
 		e.run();
 	}
 	

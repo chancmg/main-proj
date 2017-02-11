@@ -164,7 +164,7 @@ public class VisualUi extends JPanel {
 
 	}
 
-	/*public static void main(final String[] args) {
+/*	public static void main(final String[] args) {
 		int num = 5;
 
 		String[] labels = new String[num];

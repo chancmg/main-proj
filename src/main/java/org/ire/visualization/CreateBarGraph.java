@@ -91,7 +91,7 @@ public class CreateBarGraph{
 			TreeMap<String, Integer> sortedMap = SortByValue(wordFrequency);
 			System.out.println(sortedMap.size()+"heycheckthisout");
 			File file = new File("InputForBar.txt");
-			int disp = 20;
+			int disp = 10;
 			if (!file.exists())
 				file.createNewFile();
 			FileWriter writer = new FileWriter(file.getAbsoluteFile());
